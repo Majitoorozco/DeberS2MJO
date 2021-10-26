@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberS2MJO.VistaDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ingrese la Contraseña" HorizontalTextAlignment="Center" TextColor="Tomato">
+            </Label >
+            
+            <!-- //Ingrese por teclado el usuario//-->
+            <Entry x:Name="txtUser" Placeholder="ingrese el usuario">
+            </Entry >
+            
+            <!-- //ingresa por teclado el pass -->
+            <Entry x:Name="txtPass" Placeholder = "ingrese la contrasena" IsPassword="True"  >
+            </Entry>
+
+            <!-- //boton para la contrasena y metodo   -->
+            <Button x:Name="btnAbrir" Text="Abrir" Clicked="btnAbrir_Clicked" />
+         </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

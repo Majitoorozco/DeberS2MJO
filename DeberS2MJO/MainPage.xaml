@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberS2MJO.MainPage">
+
+    <StackLayout>
+        <!--titulo de la aplicacion -->
+        <Label Text="SISTEMAS DE CALIFICACIONES UISRAEL" HorizontalTextAlignment="Center" FontAttributes="Bold"
+            TextColor="Blue" FontSize="25" WidthRequest="600">
+        </Label >
+
+        <Label x:Name="lblUser" />
+        <!--caja de datos para nota de seguimiento sil label y con Placeholder para ingresar texto -->
+        
+        <Entry x:Name="TxtDato1" Keyboard="Numeric"  Placeholder=" Ingrese la Nota de seguimiento I :" >
+        </Entry >
+        <Entry x:Name="TxtDato2" Keyboard="Numeric"  Placeholder=" Ingrese la Nota de Examen 1:">
+        </Entry >
+        <Entry x:Name="TxtNota1" IsReadOnly="True"  Placeholder =" LA NOTA PARCIAL I ES:">
+        </Entry >
+
+        <Label Text="" >
+        </Label >
+        <Entry x:Name="TxtDato3" Keyboard="Numeric"  Placeholder="Ingrese la Nota de seguimiento 2:">
+        </Entry >
+
+        <Entry x:Name="TxtDato4" Keyboard="Numeric"  Placeholder="Ingrese la Nota de Examen 2:">
+        </Entry >
+
+        <Entry x:Name="TxtNota2" Keyboard="Numeric"  Placeholder="LA NOTA PARCIAL II ES:">
+        </Entry >
+
+        <Label Text="LA NOTA FINAL ES :" HorizontalTextAlignment="Center" TextColor="Orange" >
+        </Label >
+        <Entry x:Name="txtNOTAF" IsReadOnly="True">
+        </Entry >
+        
+        <!-- BOTON PARA VER LA NOTA FINAL DE LOS DOS PARCIALES -->
+        <Button x:Name="btnNota"  Text="VER NOTA"  Clicked ="btnNota_Clicked"  BackgroundColor="Magenta">
+        </Button>
+    </StackLayout>
+</ContentPage>
